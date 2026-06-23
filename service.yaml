@@ -8,5 +8,5 @@ spec:
     app: k8s-web-hello
   ports:
     - port: 3333
-      target-port: 3000
+      targetPort: 3000
     
