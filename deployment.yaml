@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: k8s-web-hello
 spec:
-  replicas: 5
   selector:
     matchLabels:
       app: k8s-web-hello
@@ -14,10 +13,10 @@ spec:
     spec:
       containers:
       - name: k8s-web-hello
-        image: bstashchuk/k8s-web-hello
+        image: bstashchuk/k8s-web-hello-ru
         resources:
           limits:
             memory: "128Mi"
-            cpu: "250m"
+            cpu: "500m"
         ports:
-        - containerPort: 3000
+        - containerPort: <Port>
